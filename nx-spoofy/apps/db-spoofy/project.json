@@ -1,0 +1,16 @@
+{
+  "name": "db-spoofy",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/db-spoofy/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/db-spoofy/**/*.js"]
+      }
+    }
+  },
+  "tags": []
+}
